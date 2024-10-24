@@ -3,76 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Khám Phá Di Sản</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img src="images/logo.jpg" height="100" width="100">
-        <h1>Trùm Phượt Thủ</h1>
-    </div>
-    <div>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg">
+            <h1>Trùm Phượt Thủ</h1>
+        </div>
+        <div class="banner">
+            <span>Default Banner</span>
+        </div>
+    </header>
+
+    <nav class="navbar">
         <ul>
-            <li>Trang chủ</li>
-            <li>Cẩm nang du lịch</li>
-            <li>Khám phá Việt Nam</li>
-            <li>Khách sạn</li>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">ĐIỂM ĐẾN HẤP DẪN</a></li>
+            <li><a href="#">CẨM NANG DU LỊCH</a></li>
+            <li><a href="#">KHÁCH SẠN</a></li>
         </ul>
-    </div>
-    <form>
-        <div>
-            <input type="text" placeholder="Từ khoá tìm kiếm...">
-        </div>
-        <div>
+    </nav>
+        <form>
+    <div class="search-bar">
+        <input type="text" placeholder="Từ khóa tìm kiếm...">
         <select>
-            <option>Chọn địa điểm</option>
-            <option>Miền Bắc</option>
-            <option>Miền Trung</option>
-            <option>Miền Nam</option>
+            <option selected disabled>Chọn địa điểm</option>
+            <option value="1">Miền Bắc</option>
+            <option value="2">Miền Trung</option>
+            <option value="3">Miền Nam</option>
         </select>
+        <button>TÌM KIẾM NGAY</button>
     </div>
-    <div>
-        <button type ="submit">Tìm kiếm ngay</button>
-    </div>
-    </form>
-    <div>
-        <div>
-            <h2>
+        </form>
+        <div class = "main-news">
+        <section class="attractive-destinations">
+            <h2 class="title">
                 <span>
-                    <a href="">Điểm đến hấp dẫn</a>
+                    <a href="/diem-den-hap-dan/">Điểm đến hấp dẫn</a>
                 </span>
             </h2>
-        </div>
-        <div>
-            <div>
-                <a><img src="images/ho-hoan-kiem-7185.jpg"></a>
+            <div class="destinations-container">
+                <div class="destination-card">
+                    <img src="images/ho-hoan-kiem-7185.jpg" alt="Hà Nội">
+                    <div class="overlay">
+                        <p>Hà Nội – Biểu tượng lịch sử độc đáo của Việt Nam</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/DTQGDB_Chua Keo Thai Binh.jpg" alt="Thái Bình">
+                    <div class="overlay">
+                        <p>Thái Bình - Nơi sản sinh những nhân tài kiệt xuất</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/Ninh_binh.webp" alt="Ninh Bình">
+                    <div class="overlay">
+                        <p>Ninh Bình - Cảnh đẹp thiên nhiên ngút trời</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/hue.jpg" alt="Huế">
+                    <div class="overlay">
+                        <p>Huế – Biểu tượng Cố Đô</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/TPHCM.jpg" alt="TPHCM">
+                    <div class="overlay">
+                        <p>TP Hồ Chí Minh - Thành phố của tương lai</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a><img src="images/DTQGDB_Chua Keo Thai Binh.jpg"></a>
-            </div>
-            <div>
-                <a><img src="images/Ninh_binh.webp"></a>
-            </div>
-        </div>
+        </section>
     </div>
-    <div>
-        <div>
-            <h2>
+    <div class="main-news-km">
+        <section class="attractive-destinations">
+            <h2 class="title">
                 <span>
-                    <a href="">Cẩm nang du lịch ok nha</a>
+                    <a href="/cam-nang-du-dich/">Cẩm nang du lịch</a>
                 </span>
             </h2>
-        </div>
-        <div>
-            <div>
-                <a><img src="images/ho-hoan-kiem-7185.jpg"></a>
+        </section>
+        <div class="container">
+            <div class="row">
+                <ul class="list-kn">
+                    <li>
+                        <a href="#">
+                            <img src="https://khamphadisan.com.vn/img/100x80/khampha/2024/09/Mang-Den-Minh-Le.jpg" alt="Khám phá Măng Đen - Thiên nhiên đại ngàn" title="Khám phá Măng Đen - Thiên nhiên đại ngàn">
+                        </a>
+                        <div class="content">
+                            <h4 class="tit-kn">
+                                <a href="#">Khám phá Măng Đen – Thiên nhiên đại ngàn</a>
+                            </h4>
+                            <p>Măng Đen là một thị trấn được mệnh danh là “Đà Lạt thu nhỏ”...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://khamphadisan.com.vn/img/100x80/khampha/2024/09/Mang-Den-Minh-Le.jpg" alt="Khám phá Măng Đen - Thiên nhiên đại ngàn" title="Khám phá Măng Đen - Thiên nhiên đại ngàn">
+                        </a>
+                        <div class="content">
+                            <h4 class="tit-kn">
+                                <a href="#">Khám phá Măng Đen – Thiên nhiên đại ngàn</a>
+                            </h4>
+                            <p>Măng Đen là một thị trấn được mệnh danh là “Đà Lạt thu nhỏ”...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://khamphadisan.com.vn/img/100x80/khampha/2024/09/Mang-Den-Minh-Le.jpg" alt="Khám phá Măng Đen - Thiên nhiên đại ngàn" title="Khám phá Măng Đen - Thiên nhiên đại ngàn">
+                        </a>
+                        <div class="content">
+                            <h4 class="tit-kn">
+                                <a href="#">Khám phá Măng Đen – Thiên nhiên đại ngàn</a>
+                            </h4>
+                            <p>Măng Đen là một thị trấn được mệnh danh là “Đà Lạt thu nhỏ”...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://khamphadisan.com.vn/img/100x80/khampha/2024/09/Mang-Den-Minh-Le.jpg" alt="Khám phá Măng Đen - Thiên nhiên đại ngàn" title="Khám phá Măng Đen - Thiên nhiên đại ngàn">
+                        </a>
+                        <div class="content">
+                            <h4 class="tit-kn">
+                                <a href="#">Khám phá Măng Đen – Thiên nhiên đại ngàn</a>
+                            </h4>
+                            <p>Măng Đen là một thị trấn được mệnh danh là “Đà Lạt thu nhỏ”...</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <a><img src="images/DTQGDB_Chua Keo Thai Binh.jpg"></a>
-            </div>
-            <div>
-                <a><img src="images/Ninh_binh.webp"></a>
-            </div>
-        </div>
+        </div>        
     </div>
+    <div>
+        <section class="attractive-destinations">
+            <h2 class="title">
+                <span>
+                    <a href="/khach-san/">Khách sạn</a>
+                </span>
+            </h2>
+        </section>
+    </div>
+    <div class="hotel-container">
+        <div class="hotel-card">
+          <img src="images/nguyen-ho-homstay-da-lat.jpg" alt="Nguyễn Hồ Homestay" />
+          <h3>Nguyễn Hồ Homestay Đà Lạt</h3>
+          <div class="price">150.000VNĐ</div>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <button>Đặt Phòng Ngay</button>
+        </div>
+        
+        <div class="hotel-card">
+          <img src="images/hoang-phuc-hotel.jpg" alt="Khách Sạn Hoàng Phúc" />
+          <h3>Khách Sạn Hoàng Phúc</h3>
+          <div class="price">230.000VNĐ</div>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <button>Đặt Phòng Ngay</button>
+        </div>
+      
+        <div class="hotel-card">
+          <img src="images/dong-ho-hotel.jpg" alt="Khách Sạn Đông Hồ" />
+          <h3>Khách Sạn Đông Hồ</h3>
+          <div class="price">200.000đ</div>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <button>Đặt Phòng Ngay</button>
+        </div>
+        
+        <div class="hotel-card">
+          <img src="images/truong-giang-hotel.jpg" alt="Khách Sạn Trường Giang" />
+          <h3>Khách Sạn Trường Giang Huế</h3>
+          <div class="price">303.000-606.000VNĐ</div>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <button>Đặt Phòng Ngay</button>
+        </div>
+      </div>
+      
 </body>
 </html>
